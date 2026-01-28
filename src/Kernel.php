@@ -13,7 +13,8 @@ class Kernel extends BaseKernel
 
     public function __construct(string $environment, bool $debug)
     {
-        $this->changeTimeZone($_ENV['APP_TIME_ZONE']);
+        
+        $this->changeTimeZone(isset($_ENV['APP_TIME_ZONE']) ?? "Europe/Paris");
 
         return parent::__construct($environment, $debug);
     }
