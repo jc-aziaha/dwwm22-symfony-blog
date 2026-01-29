@@ -38,7 +38,7 @@
     - Ajouter le code dans la zone de transit
         - ```git add .```
     - Sauvegarder l'application
-        - ```git commit -m "Message du commit"```
+        - ```git commit -m "Message du commit```
     - Envoyer le code sur la branche créée
         - ```git push --set-upstream origin nom-de-la-branche```
     - Proposer ce code pour la fusion 
