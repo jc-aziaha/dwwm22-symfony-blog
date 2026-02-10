@@ -21,17 +21,22 @@ class PostFormType extends AbstractType
             ->add('category', EntityType::class, [
                 'class' => Category::class,
                 'choice_label' => 'name',
+                'placeholder' => 'Selectionnez la catégorie',
             ])
             ->add('description', TextType::class)
             ->add('keywords', TextType::class)
             ->add('imageFile', VichImageType::class, [
                 'required' => false,
+
                 'allow_delete' => true,
                 'delete_label' => "Supprimer l'image actuelle?",
+
                 'download_label' => false,
                 'download_uri' => false,
+
                 'image_uri' => false,
                 'imagine_pattern' => false,
+
                 'asset_helper' => false,
             ])
             ->add('content', TextareaType::class)
